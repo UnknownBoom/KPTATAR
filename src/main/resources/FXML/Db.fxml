@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="844.0" styleClass="anchor" stylesheets="@../DbStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <HBox alignment="TOP_RIGHT" layoutX="-9.0" layoutY="14.0" prefHeight="26.0" prefWidth="891.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <children>
+               <Label alignment="TOP_LEFT" maxWidth="929.0" prefHeight="30.0" prefWidth="843.0" styleClass="HLabel" text="Ultimate DataBase Redactor" textAlignment="CENTER">
+                   <font>
+                       <Font size="18.0" />
+                   </font>
+                   <HBox.margin>
+                       <Insets />
+                   </HBox.margin>
+                   <padding>
+                       <Insets left="50.0" />
+                   </padding>
+                   <graphic>
+                       <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@/Image/datebase.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+               </Label>
+               <ImageView fx:id="Roll" fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="HoverBlight">
+                   <image>
+                       <Image url="@../Image/download.png" />
+                   </image>
+               </ImageView>
+               <ImageView fx:id="BClose" fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="HoverBlight">
+                   <image>
+                       <Image url="@../Image/X.png" />
+                   </image>
+               </ImageView>
+           </children>
+           <padding>
+               <Insets right="5.0" />
+           </padding>
+       </HBox>
+      <TabPane fx:id="TabPanel" layoutY="28.0" prefHeight="589.0" prefWidth="843.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="GroupsTab" text="Groups">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="843.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="GroupsTable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="844.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="StudentsTab" text="Students">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="StudentsTable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TeachersTab" text="Teachers">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="931.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="Teacherstable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="ExamsTab" text="Exams">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="931.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="ExamsTable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="StudentExamTab" text="Student_Exam">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="931.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="StudentExamTable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="reportStudents" text="Report Student">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="931.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="reportStudentsTeable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="reportStudent_Exam" text="Report Student_Exam">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="931.0" styleClass="anchor">
+                     <children>
+                        <TableView fx:id="reportStudent_ExamTable" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="843.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

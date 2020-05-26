@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="320.0" style="-fx-background-color: #3A3B4E;" stylesheets="@/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="LoginLabel" alignment="TOP_CENTER" layoutX="-6.0" layoutY="10.0" prefHeight="36.0" prefWidth="434.0" text="DB LOGIN" textFill="#f5f5f5" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DbNameField" styleClass="textField" layoutX="9.0" layoutY="69.0" prefHeight="47.0" prefWidth="302.0" promptText="DB Name" style="@/style.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LoginField" styleClass="textField" layoutX="9.0" layoutY="123.0" prefHeight="47.0" prefWidth="302.0" promptText="Login" style="@/style.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="ErrorLabel" alignment="TOP_CENTER" layoutX="17.0" layoutY="230.0" prefHeight="26.0" prefWidth="295.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="CloseLogIn" styleClass="butImg" fitHeight="47.0" fitWidth="40.0" layoutX="271.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Image/X.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="PasswordField" styleClass="textField" layoutX="9.0" layoutY="178.0" prefHeight="47.0" prefWidth="309.0" promptText="Password" style="@/style.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <ImageView fx:id="IconDataBase" fitHeight="36.0" fitWidth="40.0" layoutX="273.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Image/datebase.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="UserIcon" fitHeight="36.0" fitWidth="40.0" layoutX="273.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Image/User.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PasswordIcon" fitHeight="36.0" fitWidth="36.0" layoutX="272.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Image/Password.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="LoginButton" styleClass="loginButton" layoutX="110.0" layoutY="267.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="100.0" style="@/style.css" text="LOGIN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

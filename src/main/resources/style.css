@@ -1,0 +1,45 @@
+.logInPane{
+    -fx-background-color:  #3A444E;
+
+}
+.BodyPanel{
+    -fx-background-color: #3F424B;
+
+}
+.BodyPanelСolor{
+    -fx-background-color: #3F424B;
+}
+.button{
+    -fx-background-color: aliceblue;
+}
+
+.butImg{
+    -fx-opacity: 0.7;
+}
+.butImg:hover{
+    -fx-opacity: 1;
+}
+
+.textField{
+    -fx-background-color: #E7E7E7;
+    -fx-background-radius: 10;
+}
+
+.textField:hover{
+    -fx-background-color: white;
+}
+
+.loginButton{
+    -fx-background-radius: 10px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+
+}
+.loginButton:hover{
+    -fx-background-color: #40B88E;
+    -fx-text-fill: white;
+}
+.loginButton:pressed{
+    -fx-background-color: #0B8359;
+    -fx-text-fill: white;
+}

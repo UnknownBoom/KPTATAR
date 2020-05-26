@@ -1,0 +1,86 @@
+.anchor{
+    -fx-background-color: #4A4A4A;
+}
+.HLabel{
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-text-fill: aliceblue;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 6 , 0 );
+}
+.HoverBlight:hover {
+    -fx-effect: dropshadow( three-pass-box, whitesmoke, 10.0, 0.0, 0.0, 0.0);
+}
+
+.tab .tab-label{
+    -fx-font-family: Arial;
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+}
+
+.tab:selected {
+    -fx-background-color:black;
+}
+
+.tab-pane *.tab-header-area *.tab-header-background {
+    -fx-background-color:transparent;
+}
+
+.tab {
+    -fx-background-color:transparent ;
+}
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#383838 0%, #565656 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: #84878F;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.VBBox{
+    -fx-background-color: #686868;
+}
+.buttaply{
+    -fx-background-color: #636363;
+    -fx-border-width: 1;
+    -fx-border-color: #323232;
+
+}
+.buttaply:hover{
+    -fx-background-color: #323232;
+
+}
+.buttaply:pressed{
+    -fx-background-color: #272727;
+
+}
